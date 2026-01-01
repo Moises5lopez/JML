@@ -5,7 +5,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'vision-one',
     name: 'Vision One',
-    brand: 'CLARITY',
+    brand: 'JMLxJML',
     price: 899,
     category: 'Vision',
     subCategory: 'Headset',
@@ -15,12 +15,13 @@ export const PRODUCTS: Product[] = [
     batteryLife: '12h Active Use',
     isBestSeller: true,
     gender: 'Neutral',
+    usage: 'Casual',
     colors: ['Obsidian', 'Stellar', 'Graphite']
   },
   {
     id: 'merino-tee-sport',
     name: 'Performance Merino',
-    brand: 'CLARITY APPAREL',
+    brand: 'JMLxJML APPAREL',
     price: 95,
     category: 'Clothing',
     subCategory: 'Shirt',
@@ -36,7 +37,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'tech-knit-womens',
     name: 'Aero Knit',
-    brand: 'CLARITY APPAREL',
+    brand: 'JMLxJML APPAREL',
     price: 110,
     category: 'Clothing',
     subCategory: 'Shirt',
@@ -52,7 +53,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'focus-c1',
     name: 'Focus C1',
-    brand: 'CLARITY OPTICS',
+    brand: 'JMLxJML OPTICS',
     price: 2499,
     category: 'Optics',
     subCategory: 'Body',
@@ -67,7 +68,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'lens-35mm-l',
     name: 'Prime 35mm F1.4',
-    brand: 'CLARITY OPTICS',
+    brand: 'JMLxJML OPTICS',
     price: 1299,
     category: 'Optics',
     subCategory: 'Lens',
@@ -76,12 +77,13 @@ export const PRODUCTS: Product[] = [
     specs: ['F1.4 Aperture', 'L-Mount', 'Weather Sealed'],
     mount: 'L-Mount',
     focalLength: '35mm',
-    isBestSeller: false
+    isBestSeller: false,
+    colors: ['Black']
   },
   {
     id: 'lens-50mm-e',
     name: 'Standard 50mm F1.2',
-    brand: 'CLARITY OPTICS',
+    brand: 'JMLxJML OPTICS',
     price: 1599,
     category: 'Optics',
     subCategory: 'Lens',
@@ -90,12 +92,13 @@ export const PRODUCTS: Product[] = [
     specs: ['F1.2 Aperture', 'E-Mount', 'Nano Coating'],
     mount: 'E-Mount',
     focalLength: '50mm',
-    isBestSeller: true
+    isBestSeller: true,
+    colors: ['Black']
   },
   {
     id: 'audio-pure-h1',
     name: 'Pure H1',
-    brand: 'CLARITY AUDIO',
+    brand: 'JMLxJML AUDIO',
     price: 549,
     category: 'Headphones',
     subCategory: 'Over-Ear',
@@ -110,7 +113,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'urban-flux-8',
     name: 'Urban Flux S',
-    brand: 'CLARITY FOOTWEAR',
+    brand: 'JMLxJML FOOTWEAR',
     price: 210,
     category: 'Footwear',
     subCategory: 'Sneakers',
@@ -126,7 +129,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'executive-derby',
     name: 'Vanguard Derby',
-    brand: 'CLARITY FOOTWEAR',
+    brand: 'JMLxJML FOOTWEAR',
     price: 350,
     category: 'Footwear',
     subCategory: 'Boots',
@@ -142,7 +145,6 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const CATEGORIES: { label: string; value: Category }[] = [
-  { label: 'All', value: 'All' },
   { label: 'Vision', value: 'Vision' },
   { label: 'Audio', value: 'Headphones' },
   { label: 'Clothes', value: 'Clothing' },
@@ -158,8 +160,8 @@ export const PRICE_FILTERS = [
 ];
 
 export const MOUNT_FILTERS = ['L-Mount', 'E-Mount', 'Fixed'];
-export const FOCAL_FILTERS = ['35mm', '50mm', '85mm'];
 export const USAGE_FILTERS = ['Casual', 'Sport', 'Business', 'Training'];
-export const GENDER_FILTERS: Gender[] = ['Neutral', 'Mens', 'Womens'];
+export const GENDER_FILTERS: Gender[] = ['Mens', 'Womens', 'Neutral'];
 export const SHOE_SIZES = ['6', '7', '8', '9', '10', '11', '12'];
 export const CLOTHING_SIZES = ['XS', 'S', 'M', 'L', 'XL'];
+export const COLOR_FILTERS = ['Obsidian', 'Stellar', 'Graphite', 'Midnight', 'Bone', 'Slate', 'Deep Sea', 'Sand', 'Cloud', 'Matte Black', 'Black', 'Platinum', 'Carbon', 'Copper', 'Neon White', 'Stealth', 'Hyper Red', 'Cognac', 'Espresso'];
