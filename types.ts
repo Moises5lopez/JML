@@ -1,6 +1,18 @@
 
-export type Category = 'All' | 'Vision' | 'Clothing' | 'Optics' | 'Footwear' | 'Headphones';
-export type Gender = 'Neutral' | 'Mens' | 'Womens';
+export type Category = 
+  | 'All' 
+  | 'Jeans / Pants' 
+  | 'Shorts' 
+  | 'Sunglasses' 
+  | 'Footwear' 
+  | 'Outerwear / Knitwear' 
+  | 'Backpacks & Travel' 
+  | 'Caps' 
+  | 'Wallets' 
+  | 'Belts' 
+  | 'Phone Cases';
+
+export type Gender = 'MEN' | 'WOMEN' | 'UNISEX';
 
 export interface Product {
   id: string;
@@ -8,19 +20,13 @@ export interface Product {
   brand: string;
   price: number;
   category: Category;
-  subCategory: string;
-  image: string;
-  videoUrl?: string;
+  images: string[];
   description: string;
   specs: string[];
-  usage?: 'Casual' | 'Sport' | 'Business' | 'Training';
-  gender?: Gender;
-  batteryLife?: string;
-  sizes?: string[];
+  gender: Gender;
+  recommendedSize?: string;
   colors?: string[];
   isBestSeller?: boolean;
-  mount?: 'L-Mount' | 'E-Mount' | 'Fixed';
-  focalLength?: string;
 }
 
 export interface CartItem extends Product {
@@ -32,8 +38,6 @@ export interface CartItem extends Product {
 export interface Filters {
   category: Category;
   priceRange: string;
-  subCategory: string;
-  usage?: string;
-  size?: string;
-  gender?: Gender;
+  brand: string;
+  gender?: Gender | 'All';
 }

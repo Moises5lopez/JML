@@ -4,36 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JML | Future Archive</title>
+    <title>Clarity | Essential Tools</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --jml-black: #000000;
-            --jml-white: #ffffff;
+            --clarity-black: #000000;
+            --clarity-white: #ffffff;
         }
         body {
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
-            background-color: var(--jml-white);
-            color: var(--jml-black);
+            background-color: var(--clarity-white);
+            color: var(--clarity-black);
             overflow-x: hidden;
         }
-        .jml-title {
-            letter-spacing: -0.08em;
-            line-height: 0.8;
+        .clarity-title {
+            letter-spacing: -0.05em;
+            line-height: 0.9;
         }
         .pill-button {
             border-radius: 9999px;
             padding: 1.25rem 2.5rem;
-            font-weight: 800;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 0.7rem;
-            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-            border: 1.5px solid #000;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            border: 1px solid #000;
         }
         .pill-button-black {
             background-color: #000;
@@ -42,6 +42,8 @@
         .pill-button-black:hover {
             background-color: transparent;
             color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .pill-button-white {
             background-color: #fff;
@@ -50,37 +52,43 @@
         .pill-button-white:hover {
             background-color: #000;
             color: #fff;
+            transform: translateY(-2px);
         }
         .category-pill {
-            border-radius: 2rem;
+            border-radius: 1.5rem;
             overflow: hidden;
             position: relative;
-            background: #f4f4f4;
-            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            background: #fcfcfc;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
         }
         .category-pill:hover {
-            transform: scale(1.02);
+            transform: scale(1.01);
+            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.1);
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade {
-            animation: fadeIn 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
         }
         .nav-link {
-            font-size: 10px;
-            font-weight: 800;
+            font-size: 11px;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: #ccc;
+            letter-spacing: 0.1em;
+            color: #a0a0a0;
             transition: color 0.3s ease;
         }
         .nav-link:hover, .nav-link.active {
             color: #000;
+        }
+        .mask-fade-right {
+            mask-image: linear-gradient(to right, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
         }
     </style>
 <script type="importmap">
